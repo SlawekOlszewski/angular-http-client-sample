@@ -1,0 +1,20 @@
+<h2>Upload a file</h2>
+<form enctype="multipart/form-data" method="post">
+  <div>
+    <label for="picked">Choose a file to upload:</label>
+    <input type="file"
+           id="picked"
+           #picked
+           (click)="message=''"
+           (change)="onPicked(picked)">
+
+  </div>
+  <p *ngIf="message">{{message}}</p>
+</form>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
